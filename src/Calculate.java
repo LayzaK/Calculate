@@ -6,8 +6,15 @@ public class Calculate{
 
         if(args[0].equals("somar")){
             sum(x, y);
-        }else if(args[0].equals("subtrair")){
+        }
+        else if(args[0].equals("subtrair")){
             minus(x, y);
+        }
+        else if(args[0].equals("dividir")){
+            division(x, y);
+        }
+        else if(args[0].equals("multiplicar")){
+            multi(x, y);
         }
 
     }
@@ -21,4 +28,11 @@ public class Calculate{
         System.out.println(x - y);
 }
 
+    static void division(int x, int y){
+        System.out.println(x / y);
+    }
+
+    static void multi(int x, int y){
+        System.out.println(x * y);
+    }
 }
